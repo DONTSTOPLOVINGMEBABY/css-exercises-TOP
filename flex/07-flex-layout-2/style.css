@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 
@@ -13,12 +14,12 @@ body {
 }
 
 .header {
-  height: 72px;
+  height: fit-content;
   background: darkmagenta;
   color: white;
   font-size:x-large;
-  font-weight: bolder;
-
+  font-weight: 900;
+  padding: 12px;
   
 }
 
@@ -34,10 +35,35 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex-shrink: 0;
+  padding: 16px;
+  
+}
+
+.cards {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  margin: 16px;
+  height: fit-content;
+  padding: 12px;
+  width: 20%;
+
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 8px;
+}
+
+ul {
+  padding: 0;
 }
